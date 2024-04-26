@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from 'express';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  constructor(public router: Router) {}
+
   title = 'blog-mean-project';
 }
